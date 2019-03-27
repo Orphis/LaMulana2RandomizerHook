@@ -67,7 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LM2RHooks\patch_MojiScript.cs" />
+    <Compile Include="Hooks\patch_AbstractItemBase.cs" />
+    <Compile Include="Hooks\patch_MojiScript.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

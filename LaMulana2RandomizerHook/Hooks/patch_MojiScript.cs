@@ -1,14 +1,14 @@
-﻿using L2Base;
+﻿using L2Word;
 using MonoMod;
 
 #pragma warning disable CS0626 // orig_ method is marked external and has no attributes on it.
-namespace LM2RHooks
+namespace LaMulana2RandomizerHook.Hooks
 {
     [MonoModPatch("L2Word.MojiScript")]
     public class patch_MojiScript
     {
         [MonoModIgnore]
-        private L2Word.COMMDATA[] commbuff;
+        private COMMDATA[] commbuff;
 
         private extern bool orig_getCommData(string data, int start, int num);
         private bool getCommData(string data, int start, int num)
